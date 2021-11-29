@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMP_MESSAGES</ARBGB>
+    <MASTERLANG>D</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Verbindung von &amp;1 ausgewählt.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Keine entsprechenden Daten in der Datenbank !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Fehlende Berechtigung!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Flüge zur Verbindung &amp;1 gewählt.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Stadt enthält fälschlicherweise Ziffern.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Keine Verbindung &amp;1 &amp;2 gefunden</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Verbindung &amp;1 &amp;2 ausgewählt.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZMP_MESSAGES</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Sperre konnte nicht eingesetzt werden.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

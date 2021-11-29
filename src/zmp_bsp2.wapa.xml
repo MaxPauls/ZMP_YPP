@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_WAPA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <APPLNAME>ZMP_BSP2</APPLNAME>
+    <APPLEXT>ZMP_BSP2</APPLEXT>
+    <ORIGLANG>D</ORIGLANG>
+    <MODIFLANG>D</MODIFLANG>
+    <TEXT>BSP für Flugdaten</TEXT>
+   </ATTRIBUTES>
+   <PAGES>
+    <item>
+     <ATTRIBUTES>
+      <APPLNAME>ZMP_BSP2</APPLNAME>
+      <PAGEKEY>ANZEIGE.HTM</PAGEKEY>
+      <PAGENAME>anzeige.htm</PAGENAME>
+      <MIMETYPE>text/html</MIMETYPE>
+      <LAYOUTLANGU>D</LAYOUTLANGU>
+      <VERSION>A</VERSION>
+      <LANGU>D</LANGU>
+      <DESCRIPT>Seite</DESCRIPT>
+     </ATTRIBUTES>
+    </item>
+   </PAGES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

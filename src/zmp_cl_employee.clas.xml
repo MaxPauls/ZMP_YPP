@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Die Angestellten</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+     <CMPNAME>GET_ALTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>gibt das aktuelle Alter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+     <CMPNAME>GET_BASE_SALARY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>gibt das Grundgehalt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+     <CMPNAME>GET_SALARY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>gibt das Gehalt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+     <CMPNAME>MV_BASE_SALARY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Grundgehalt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+     <CMPNAME>PRINT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Schreibt den Employee aus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_EMPLOYEE</CLSNAME>
+     <CMPNAME>SET_BASE_SALARY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>setzt das Grundgehalt</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

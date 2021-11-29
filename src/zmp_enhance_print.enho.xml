@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Print-Erweiterung</SHORTTEXT>
+   <SPOT_NAME>ZTS_BADI_TAW12</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>ZTS_BADI_TAW12</SPOT_NAME>
+     <BADI_NAME>PRINT_YOUR_OWN_TEXT_TOBI</BADI_NAME>
+     <IMPL_NAME>ZMP_BADI_PRINT</IMPL_NAME>
+     <IMPL_CLASS>ZMP_CL_ENHANCE_PRINT</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Implementierung: Ausgabe eines Textes</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>D12E40483EF71EDAA9ACA29B7BCC80CD</IMPL_SHORTTEXT_ID>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>D12E40483EF71EDAA9AC99C3668420CD</CONCEPT>
+      <CREA_LAN>D</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>D12E40483EF71EDAA9AC99C3668420CD</CONCEPT>
+       <LANGU>D</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>027</LENGTH>
+       <TEXT>Print-Erweiterung</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+    <item>
+     <HEADER>
+      <CONCEPT>D12E40483EF71EDAA9ACA29B7BCC80CD</CONCEPT>
+      <CREA_LAN>D</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>D12E40483EF71EDAA9ACA29B7BCC80CD</CONCEPT>
+       <LANGU>D</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>056</LENGTH>
+       <TEXT>Implementierung: Ausgabe eines Textes</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZMP_ENHANCE_PRINT</OBJ_NAME>
+     <CONCEPT>D12E40483EF71EDAA9AC99C3668420CD</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZMP_ENHANCE_PRINT</OBJ_NAME>
+     <CONCEPT>D12E40483EF71EDAA9ACA29B7BCC80CD</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Eine Person</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>GET_ADDRESS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>gibt die Addresse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>GET_DOB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>gibt das geburtsdatum</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>GET_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>gibt den namen aus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>MV_ADRESSE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adresse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>MV_DOB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geburtsdatum</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>MV_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Der Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>SET_ADDRESS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Addresse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>SET_DOB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt das Datum</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZMP_CL_PERSON</CLSNAME>
+     <CMPNAME>SET_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Namen</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

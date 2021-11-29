@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZOBJ_MP_AO</OBJCT>
+    <FIEL1>ACTVT</FIEL1>
+    <FIEL2>CARRID</FIEL2>
+    <OCLSS>ZOBJ</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>D</LANGU>
+    <OBJECT>ZOBJ_MP_AO</OBJECT>
+    <TTEXT>RZ10 Schulung</TTEXT>
+   </TOBJT>
+   <TACTZ>
+    <TACTZ>
+     <BROBJ>ZOBJ_MP_AO</BROBJ>
+     <ACTVT>03</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZOBJ_MP_AO</BROBJ>
+     <ACTVT>16</ACTVT>
+    </TACTZ>
+   </TACTZ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

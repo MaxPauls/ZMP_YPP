@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SICF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <URL>/sap/bc/webdynpro/sap/MI7800800/</URL>
+   <ICFSERVICE>
+    <ICF_NAME>MI7800800</ICF_NAME>
+    <ORIG_NAME>MI7800800</ORIG_NAME>
+    <ICFALTNME>ZMP_WD_HELLOWORLD2</ICFALTNME>
+   </ICFSERVICE>
+   <ICFDOCU>
+    <ICF_NAME>MI7800800</ICF_NAME>
+    <ICF_LANGU>D</ICF_LANGU>
+    <ICF_DOCU>Anwendung</ICF_DOCU>
+   </ICFDOCU>
+  </asx:values>
+ </asx:abap>
+</abapGit>

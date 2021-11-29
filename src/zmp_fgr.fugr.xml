@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>funktionengruppe</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMP_FGRTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMP_FGR</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMP_F_CALC</FUNCNAME>
+     <SHORT_TEXT>funktion calc</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_OP1</PARAMETER>
+       <TYP>I</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_OP2</PARAMETER>
+       <TYP>I</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_OPERATOR</PARAMETER>
+       <TYP>C</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ERGEBNIS</PARAMETER>
+       <TYP>I</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ZERO_DIVISION</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_OPERATOR</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_OP1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_OP2</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_OPERATOR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ERGEBNIS</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ZERO_DIVISION</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>durch 0 geteilt</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_OPERATOR</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Übergebener Operator ist nicht korrekt</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMP_TEST</FUNCNAME>
+     <SHORT_TEXT>sdf</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>Z_MP_SANGEBOT</FUNCNAME>
+     <SHORT_TEXT>FuBa für Flüge</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_CARRID1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CARRID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CARRID2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CARRID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CONNID1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CONNID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CONNID2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CONNID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_VERFUEGBAR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INTEGER4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_CARRID1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kurzbezeichnung der Fluggesellschaft</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CARRID2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kurzbezeichnung der Fluggesellschaft</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CONNID1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Code der Einzelflugverbindung</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CONNID2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Code der Einzelflugverbindung</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_VERFUEGBAR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Integer 4</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ZMP_GET_FLUEGE</FUNCNAME>
+     <SHORT_TEXT>Gibt alle Fluege zurück</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_CARRID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CARRID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_LISTE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZMP_T_FLISTE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SQL_ERROR</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NO_AUTH</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_CARRID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kurzbezeichnung der Fluggesellschaft</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_LISTE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Die rückgabe als Flugliste</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SQL_ERROR</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>SQL ERROR</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_AUTH</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Fehlerhafte Authorisierung</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ZPM_SANGEBOT</FUNCNAME>
+     <SHORT_TEXT>gibt gültigkeit</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_CARRID1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CARRID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_CONNID1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CONNID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_CARRID2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CARRID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_CONNID2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI-CONNID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_VERFUEGBAR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INTEGER4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_CARRID1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kurzbezeichnung der Fluggesellschaft</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_CONNID1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Code der Einzelflugverbindung</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_CARRID2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kurzbezeichnung der Fluggesellschaft</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_CONNID2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Code der Einzelflugverbindung</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_VERFUEGBAR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Integer 4</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZMP_DE_LSNAME</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <DOMNAME>ZMP_DO_CHAR15</DOMNAME>
+    <HEADLEN>13</HEADLEN>
+    <SCRLEN1>06</SCRLEN1>
+    <SCRLEN2>06</SCRLEN2>
+    <SCRLEN3>13</SCRLEN3>
+    <DDTEXT>Name des Lehrstuhls</DDTEXT>
+    <REPTEXT>Lehrstuhlname</REPTEXT>
+    <SCRTEXT_S>LSNAME</SCRTEXT_S>
+    <SCRTEXT_M>LSNAME</SCRTEXT_M>
+    <SCRTEXT_L>Lehrstuhlname</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

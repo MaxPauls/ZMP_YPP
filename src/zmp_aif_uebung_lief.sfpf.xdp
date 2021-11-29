@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162_SAP" APIVersion="3.6.13324.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-06-23T15:31:15Z" uuid="5c6314fc-4f56-4745-b031-323828f054cd">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.0/">
+   <?formServer defaultPDFRenderFormat acrobat9.1dynamic?>
+   <subform layout="tb" locale="en_GB" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Seite1">
+            <contentArea h="243.025mm" w="200.475mm" x="6.35mm" y="53.975mm"/>
+            <medium long="297mm" short="210mm" stock="a4"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform columnWidths="40mm 40mm 40mm 40mm 40mm" layout="table" name="GT_LIPS">
+         <subform id="overflowLeader_ID" layout="row" name="overflowLeader">
+            <draw>
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <text xliff:rid="A56DF79B-8FC2-424F-9C61-152438EBA99B">Lieferung</text>
+               </value>
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <border>
+                  <edge/>
+               </border>
+            </draw>
+            <draw>
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <text xliff:rid="27C5B4EF-4CA8-407C-ABD4-CD6EEA6ACB1D">Pos</text>
+               </value>
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <border>
+                  <edge/>
+               </border>
+            </draw>
+            <draw>
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <text xliff:rid="8DDC37A2-1EA7-4B78-9844-C1E374CF554B">Liefermenge</text>
+               </value>
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <border>
+                  <edge/>
+               </border>
+            </draw>
+            <draw>
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <text xliff:rid="9A8CC745-0CAE-4D40-A185-3AE995B9ABEE">BME</text>
+               </value>
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <border>
+                  <edge/>
+               </border>
+            </draw>
+            <draw>
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <text xliff:rid="EEA38956-30C8-470C-84F8-A54C127A8BF4">Bezeichnung</text>
+               </value>
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <border>
+                  <edge/>
+               </border>
+            </draw>
+            <assist role="TH"/>
+            <occur max="-1"/>
+            <bind match="none"/>
+            <?templateDesigner expand 1?></subform>
+         <subform layout="row" name="DATA">
+            <field h="9mm" name="VBELN" w="62mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text maxChars="10"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema-Anmerkung">Lieferung</text>
+               </desc>
+               <border>
+                  <edge/>
+               </border>
+            </field>
+            <field h="9mm" name="POSNR" w="62mm" x="2.440944in">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text maxChars="6"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema-Anmerkung">Lieferposition</text>
+               </desc>
+               <border>
+                  <edge/>
+               </border>
+            </field>
+            <field h="9mm" name="LFIMG" w="62mm" x="4.881889in">
+               <ui>
+                  <numericEdit>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <decimal fracDigits="3" leadDigits="10"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema-Anmerkung">Tatsächlich gelieferte Menge in VME</text>
+               </desc>
+               <validate nullTest="error"/>
+               <border>
+                  <edge/>
+               </border>
+            </field>
+            <field h="9mm" name="MEINS" w="62mm" y="0.354333in">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text maxChars="3"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema-Anmerkung">Basismengeneinheit</text>
+               </desc>
+               <border>
+                  <edge/>
+               </border>
+            </field>
+            <field h="9mm" name="ARKTX" w="62mm" x="2.440944in" y="0.354333in">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text maxChars="40"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema-Anmerkung">Kurztext der Kundenauftragsposition</text>
+               </desc>
+               <border>
+                  <edge/>
+               </border>
+            </field>
+            <assist role="TR"/>
+            <occur max="-1"/>
+            <bind match="none"/>
+            <?templateDesigner expand 1?></subform>
+         <occur min="0"/>
+         <bind match="none"/>
+         <desc>
+            <text name="Schema-Anmerkung">Tabellentyp Vertriebsbeleg: Lieferung: Positionsdaten</text>
+         </desc>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.905378.null</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 72 18 00250028002F00300033004600480049004A004B004C005000510052005500560058005DBELMPcefghimnorsuz?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:1, color:ff8080, origin:(0,0), interval:(79375,79375)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner FormTargetVersion 30?>
+   <?templateDesigner Zoom 147?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>HTTP://ciec3.wdf.sap.corp:50080/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>5</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZMP_AIF_UEBUNG_LIEF">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <GT_LIPS dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <VBELN/>
+               <POSNR/>
+               <LFIMG/>
+               <MEINS/>
+               <ARKTX/>
+            </DATA>
+         </GT_LIPS>
+         <GS_LIKP>
+            <MANDT/>
+            <VBELN/>
+            <ERNAM/>
+            <ERZET/>
+            <ERDAT/>
+            <BZIRK/>
+            <VSTEL/>
+            <VKORG/>
+            <LFART/>
+            <AUTLF/>
+            <KZAZU/>
+            <WADAT/>
+            <LDDAT/>
+            <TDDAT/>
+            <LFDAT/>
+            <KODAT/>
+            <ABLAD/>
+            <INCO1/>
+            <INCO2/>
+            <EXPKZ/>
+            <ROUTE/>
+            <FAKSK/>
+            <LIFSK/>
+            <VBTYP/>
+            <KNFAK/>
+            <TPQUA/>
+            <TPGRP/>
+            <LPRIO/>
+            <VSBED/>
+            <KUNNR/>
+            <KUNAG/>
+            <KDGRP/>
+            <STZKL/>
+            <STZZU/>
+            <BTGEW/>
+            <NTGEW/>
+            <GEWEI/>
+            <VOLUM/>
+            <VOLEH/>
+            <ANZPK/>
+            <BEROT/>
+            <LFUHR/>
+            <GRULG/>
+            <LSTEL/>
+            <TRAGR/>
+            <FKARV/>
+            <FKDAT/>
+            <PERFK/>
+            <ROUTA/>
+            <STAFO/>
+            <KALSM/>
+            <KNUMV/>
+            <WAERK/>
+            <VKBUR/>
+            <VBEAK/>
+            <ZUKRL/>
+            <VERUR/>
+            <COMMN/>
+            <STWAE/>
+            <STCUR/>
+            <EXNUM/>
+            <AENAM/>
+            <AEDAT/>
+            <LGNUM/>
+            <LISPL/>
+            <VKOIV/>
+            <VTWIV/>
+            <SPAIV/>
+            <FKAIV/>
+            <PIOIV/>
+            <FKDIV/>
+            <KUNIV/>
+            <KKBER/>
+            <KNKLI/>
+            <GRUPP/>
+            <SBGRP/>
+            <CTLPC/>
+            <CMWAE/>
+            <AMTBL/>
+            <BOLNR/>
+            <LIFNR/>
+            <TRATY/>
+            <TRAID/>
+            <CMFRE/>
+            <CMNGV/>
+            <XABLN/>
+            <BLDAT/>
+            <WADAT_IST/>
+            <TRSPG/>
+            <TPSID/>
+            <LIFEX/>
+            <TERNR/>
+            <KALSM_CH/>
+            <KLIEF/>
+            <KALSP/>
+            <KNUMP/>
+            <NETWR/>
+            <AULWE/>
+            <WERKS/>
+            <LCNUM/>
+            <ABSSC/>
+            <KOUHR/>
+            <TDUHR/>
+            <LDUHR/>
+            <WAUHR/>
+            <LGTOR/>
+            <LGBZO/>
+            <AKWAE/>
+            <AKKUR/>
+            <AKPRZ/>
+            <PROLI/>
+            <XBLNR/>
+            <HANDLE/>
+            <TSEGFL/>
+            <TSEGTP/>
+            <TZONIS/>
+            <TZONRC/>
+            <CONT_DG/>
+            <VERURSYS/>
+            <KZWAB/>
+            <VLSTK/>
+            <TCODE/>
+            <VSART/>
+            <TRMTYP/>
+            <SDABW/>
+            <VBUND/>
+            <XWOFF/>
+            <DIRTA/>
+            <PRVBE/>
+            <FOLAR/>
+            <PODAT/>
+            <POTIM/>
+            <VGANZ/>
+            <IMWRK/>
+            <SPE_LOEKZ/>
+            <SPE_LOC_SEQ/>
+            <SPE_ACC_APP_STS/>
+            <SPE_SHP_INF_STS/>
+            <SPE_RET_CANC/>
+            <SPE_WAUHR_IST/>
+            <SPE_WAZONE_IST/>
+            <SPE_REV_VLSTK/>
+            <SPE_LE_SCENARIO/>
+            <SPE_ORIG_SYS/>
+            <SPE_CHNG_SYS/>
+            <SPE_GEOROUTE/>
+            <SPE_GEOROUTEIND/>
+            <SPE_CARRIER_IND/>
+            <SPE_GTS_REL/>
+            <SPE_GTS_RT_CDE/>
+            <SPE_REL_TMSTMP/>
+            <SPE_UNIT_SYSTEM/>
+            <SPE_INV_BFR_GI/>
+            <SPE_QI_STATUS/>
+            <SPE_RED_IND/>
+            <SAKES/>
+            <SPE_LIFEX_TYPE/>
+            <SPE_TTYPE/>
+            <SPE_PRO_NUMBER/>
+            <LOC_GUID/>
+            <SPE_BILLING_IND/>
+            <PRINTER_PROFILE/>
+            <MSR_ACTIVE/>
+            <PRTNR/>
+            <STGE_LOC_CHANGE/>
+            <TM_CTRL_KEY/>
+            <DLV_SPLIT_INITIA/>
+            <DLV_VERSION/>
+            <HANDOVERLOC/>
+            <HANDOVERDATE/>
+            <HANDOVERTIME/>
+            <HANDOVERTZONE/>
+            <XBEV1XLULEINH/>
+            <XBEV1XRPFAESS/>
+            <XBEV1XRPKIST/>
+            <XBEV1XRPCONT/>
+            <XBEV1XRPSONST/>
+            <XBEV1XRPFLGNR/>
+            <BORGR_GRP/>
+         </GS_LIKP>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United Kingdom)" name="en_GB">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">D MMM YYYY</datePattern>
+         <datePattern name="short">DD/MM/YYYY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">HH:MM:SS Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">£</currencySymbol>
+         <currencySymbol name="isoname">GBP</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2020-06-23T15:31:15Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:5c6314fc-4f56-4745-b031-323828f054cd</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.905378.null</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
